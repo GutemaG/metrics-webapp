@@ -1,12 +1,12 @@
 import React from 'react';
-import { Button, Form } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './style/NavBar.css';
 
-function NavBar() {
+const NavBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const goBack = () => {
@@ -36,20 +36,10 @@ function NavBar() {
               )
             }
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-              variant="dark"
-            />
-            <Button variant="outline-secondary">Search</Button>
-          </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
-}
+};
 
 export default NavBar;

@@ -33,5 +33,5 @@ const cryptoSlice = createSlice({
     }));
   },
 });
-
+export const { filterCoins } = cryptoSlice.actions;
 export default cryptoSlice.reducer;

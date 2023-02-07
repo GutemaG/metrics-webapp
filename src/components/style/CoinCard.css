@@ -2,13 +2,14 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   cursor: pointer;
-  margin: 1rem;
+  margin: 0.3rem;
   transition: all 0.5s;
 }
 
 .coin-card:hover {
   transform: scale(1.1);
   border: 2px solid gold;
+  z-index: 10;
 }
 
 .coin-price {
