@@ -5,6 +5,7 @@ import {
 } from 'react-bootstrap';
 import CoinCard from '../components/CoinCard';
 import './style/Home.css';
+import { coins } from '../constant';
 
 function Home() {
   return (
@@ -13,11 +14,11 @@ function Home() {
       {/* <Button variant="secondary" className="align-self-end">Show In table</Button> */}
       <Container className="card-container">
         <Row md={4}>
-          <CoinCard />
-          <CoinCard />
-          <CoinCard />
-          <CoinCard />
-          <CoinCard />
+          {
+            coins.map((coin) => (
+              <CoinCard key={coin.id} coin={coin} />
+            ))
+          }
         </Row>
       </Container>
     </Container>

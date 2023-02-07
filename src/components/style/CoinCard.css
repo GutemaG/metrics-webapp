@@ -15,3 +15,16 @@
   font-weight: 600;
   font-size: 1.4rem;
 }
+
+.coin-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.coin-card-header img {
+  width: 50%;
+  height: 50%;
+}

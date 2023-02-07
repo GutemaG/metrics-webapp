@@ -3,12 +3,20 @@ import { Button, Form } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import './style/NavBar.css';
 
 function NavBar() {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const goBack = () => {
+    navigate(-1);
+  };
+
   return (
     <Navbar variant="dark" bg="dark" expand="lg">
       <Container>
-        <Navbar.Brand href="#">CryptoCurrencies</Navbar.Brand>
+        <Link to="/" style={{ color: '#fff' }}>CryptoCurrencies</Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -16,7 +24,17 @@ function NavBar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
+            {
+              !(location.pathname === '/') && (
+                <Button
+                  variant="outline-secondary"
+                  className="go-back-arrow"
+                  onClick={goBack}
+                >
+                  &larr;
+                </Button>
+              )
+            }
           </Nav>
           <Form className="d-flex">
             <Form.Control
@@ -24,8 +42,9 @@ function NavBar() {
               placeholder="Search"
               className="me-2"
               aria-label="Search"
+              variant="dark"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="outline-secondary">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
