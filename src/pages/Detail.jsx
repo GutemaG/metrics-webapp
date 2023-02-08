@@ -1,37 +1,19 @@
 import React from 'react';
 import { Container, Table } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
 import './style/Detail.css';
 
 const Detail = () => {
-  const d = {
-    id: 'bitcoin',
-    icon: 'https://static.coinstats.app/coins/1650455588819.png',
-    name: 'Bitcoin',
-    symbol: 'BTC',
-    rank: 1,
-    price: 23007.346911011686,
-    priceBtc: 1,
-    volume: 28148637084.822525,
-    marketCap: 443657572689.11163,
-    availableSupply: 19283300,
-    totalSupply: 21000000,
-    priceChange1h: 0.03,
-    priceChange1d: 0.49,
-    priceChange1w: -0.44,
-    websiteUrl: 'http://www.bitcoin.org',
-    twitterUrl: 'https://twitter.com/bitcoin',
-    exp: [
-      'https://blockchair.com/bitcoin/',
-      'https://btc.com/',
-      'https://btc.tokenview.io/',
-    ],
-  };
+  const { id } = useParams();
+  const { cryptos } = useSelector((state) => state.crypto);
+  const selectedCrypto = cryptos.find((crypto) => crypto.id === id);
 
   return (
     <Container className="detail-container">
       <div className="coin-icon-container">
-        <img src={d.icon} alt="coin-icon" className="coin-icon" />
-        <h3>{d.name}</h3>
+        <img src={selectedCrypto.icon} alt="coin-icon" className="coin-icon" />
+        <h3>{selectedCrypto.name}</h3>
       </div>
       <Container className="w-50">
         <Table striped bordered hover responsive variant="dark">
@@ -43,27 +25,33 @@ const Detail = () => {
           </thead>
           <tbody>
             <tr>
+              <td>Symbol</td>
+              <td>{selectedCrypto.symbol}</td>
+            </tr>
+            <tr>
               <td>Rank</td>
-              <td>{d.rank}</td>
+              <td>{selectedCrypto.rank}</td>
             </tr>
             <tr>
               <td>Name</td>
-              <td>{d.name}</td>
+              <td>{selectedCrypto.name}</td>
             </tr>
             <tr>
               <td>Price</td>
               <td>
                 $
-                {d.price}
+                {(Math.round(selectedCrypto.price * 100) / 100).toFixed(3)}
               </td>
             </tr>
             <tr>
-              <td>Bitcoin Price</td>
-              <td>{d.priceBtc}</td>
+              <td>Price BTC</td>
+              <td>
+                {selectedCrypto.priceBtc}
+              </td>
             </tr>
             <tr>
               <td>Volume</td>
-              <td>{d.volume}</td>
+              <td>{selectedCrypto.volume}</td>
             </tr>
           </tbody>
         </Table>

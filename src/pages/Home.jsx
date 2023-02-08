@@ -32,7 +32,6 @@ const Home = () => {
   return (
     <Container>
       <h1 className="text-center mt-4">Top Crypto Currencies</h1>
-      {/* <Button variant="secondary" className="align-self-end">Show In table</Button> */}
       <Container className="card-container">
         { isLoading && (
           <div className="spinner">
@@ -46,20 +45,24 @@ const Home = () => {
             <h1 className="text-danger">{error}</h1>
           </div>
         )}
-        <Form.Control
-          type="search"
-          placeholder="Search coins by their name"
-          className="m-2"
-          aria-label="Search"
-          onChange={handleChange}
-        />
-        <Row md={4}>
-          {
-            filteredCryptos.map((coin) => (
-              <CoinCard key={coin.id} coin={coin} />
-            ))
-          }
-        </Row>
+        {!isLoading && (
+          <div>
+            <Form.Control
+              type="search"
+              placeholder="Search coins by their name"
+              className="m-2"
+              aria-label="Search"
+              onChange={handleChange}
+            />
+            <Row md={4}>
+              {
+                filteredCryptos.map((coin) => (
+                  <CoinCard key={coin.id} coin={coin} />
+                ))
+                }
+            </Row>
+          </div>
+        )}
       </Container>
     </Container>
   );

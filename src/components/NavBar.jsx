@@ -14,7 +14,7 @@ const NavBar = () => {
   };
 
   return (
-    <Navbar variant="dark" bg="dark" expand="lg">
+    <Navbar variant="dark" bg="dark" expand="lg" className="nav-bar">
       <Container>
         <Link to="/" style={{ color: '#fff' }}>CryptoCurrencies</Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
