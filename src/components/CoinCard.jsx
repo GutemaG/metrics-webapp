@@ -32,7 +32,7 @@ CoinCard.propTypes = {
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     icon: PropTypes.string.isRequired,
-    priceChanged: PropTypes.number.isRequired,
+    priceChanged1d: PropTypes.number,
     rank: PropTypes.number.isRequired,
     symbol: PropTypes.string.isRequired,
   }).isRequired,

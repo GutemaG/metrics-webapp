@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing CoinCard component Render coin card component correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <a
+          class="text-white"
+          href="/detail/bitcoin"
+        >
+          <div
+            border="danger"
+            class="m-1 col"
+          >
+            <div
+              class="bg-dark p-4 coin-card card"
+            >
+              <h2
+                class="card-header"
+              >
+                <div
+                  class="coin-card-header"
+                >
+                  <span
+                    class="rank-badge badge bg-secondary"
+                  >
+                    1
+                  </span>
+                  <img
+                    alt="coin-icon"
+                    class="justify-content-center m-"
+                    src="https://static.coinstats.app/coins/1650455588819.png"
+                  />
+                  <span
+                    class="coin-name text-decoration-underline m-1"
+                  >
+                    Bitcoin
+                  </span>
+                </div>
+              </h2>
+              <p
+                class="m-1 coin-price card-text"
+              >
+                $
+                22959.100
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <a
+        class="text-white"
+        href="/detail/bitcoin"
+      >
+        <div
+          border="danger"
+          class="m-1 col"
+        >
+          <div
+            class="bg-dark p-4 coin-card card"
+          >
+            <h2
+              class="card-header"
+            >
+              <div
+                class="coin-card-header"
+              >
+                <span
+                  class="rank-badge badge bg-secondary"
+                >
+                  1
+                </span>
+                <img
+                  alt="coin-icon"
+                  class="justify-content-center m-"
+                  src="https://static.coinstats.app/coins/1650455588819.png"
+                />
+                <span
+                  class="coin-name text-decoration-underline m-1"
+                >
+                  Bitcoin
+                </span>
+              </div>
+            </h2>
+            <p
+              class="m-1 coin-price card-text"
+            >
+              $
+              22959.100
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
