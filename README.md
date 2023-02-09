@@ -45,8 +45,6 @@ It is a web application built with React and Redux that enables users to check a
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
   <summary>Client</summary>
   <ul>
@@ -56,8 +54,6 @@ It is a web application built with React and Redux that enables users to check a
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
 
 - **API**
 - **SPA**
@@ -69,7 +65,8 @@ It is a web application built with React and Redux that enables users to check a
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://metrics-webapp-qu1r.onrender.com/)
+- [Video description](https://www.loom.com/share/62c247723ec94f988d80a89cc223d586)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,7 +74,6 @@ It is a web application built with React and Redux that enables users to check a
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -133,8 +129,6 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Birhanu Gudisa**
 
 - GitHub: [@GutemaG](https://github.com/GutemaG)
@@ -145,8 +139,6 @@ You can deploy this project using:
 
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **Add Pagination**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -164,8 +156,6 @@ Feel free to check the [issues page]([../../issues/](https://github.com/GutemaG/
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
-
-> Write a message to encourage readers to support your project
 
 If you like this project give it a **star**
 
@@ -185,8 +175,6 @@ I would like to thank Microverse community and Nelson Sakwa the author of the or
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
