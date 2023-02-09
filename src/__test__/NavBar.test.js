@@ -3,8 +3,8 @@ import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import NavBar from '../NavBar';
-import store from '../../redux/configureStore';
+import store from '../redux/configureStore';
+import NavBar from '../components/NavBar';
 
 describe('Testing NavBar page', () => {
   test('Render NavBar page correctly', () => {

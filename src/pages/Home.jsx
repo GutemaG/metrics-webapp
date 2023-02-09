@@ -54,7 +54,7 @@ const Home = () => {
               aria-label="Search"
               onChange={handleChange}
             />
-            <Row md={4}>
+            <Row md={4} sm={2} xs={2}>
               {
                 filteredCryptos.map((coin) => (
                   <CoinCard key={coin.id} coin={coin} />

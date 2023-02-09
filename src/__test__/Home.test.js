@@ -3,8 +3,8 @@ import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import Home from '../Home';
-import store from '../../redux/configureStore';
+import Home from '../pages/Home';
+import store from '../redux/configureStore';
 
 describe('Testing home page', () => {
   test('Render Home page correctly', () => {

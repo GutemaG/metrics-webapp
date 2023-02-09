@@ -1,5 +1,5 @@
-import coinReducer, { fetchCryptos } from '../crypto/crypto';
-// import fetchCryptos from '../crypto/crypto';
+import coinReducer, { fetchCryptos } from '../redux/crypto/crypto';
+
 describe('Testing reducers', () => {
   it('can return initial value', () => {
     const initialState = {
