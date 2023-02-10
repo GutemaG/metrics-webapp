@@ -1,0 +1,38 @@
+.coin-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0.3rem;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.coin-card:hover {
+  transform: scale(1.1);
+  border: 2px solid gold;
+  z-index: 10;
+}
+
+.coin-price {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.coin-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.coin-card-header img {
+  width: 50%;
+  height: 50%;
+}
+
+.rank-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
